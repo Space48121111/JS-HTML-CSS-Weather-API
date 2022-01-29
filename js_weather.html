@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <meta name="Spaceweatherdata:" content="Openweathermap">
+    <title>Weather Alert</title>
+    <!-- css styling-->
+    <style>
+      * {
+        margin: 5px; /*1000px ≈ 400dpi dots per inch */
+        padding: 5px;
+        outline: 2px dashed rgba(230, 230, 250, 0.5);
+        /* red green blue alpha */
+        box-sizing: border-box;
+        /* width/height - 2*padding - 2*border */
+        /* content-box: width/height + 2*padding + 2*border */
+      }
+      body {
+        height: 100vh;
+        /* 100 * 1/100th of the view height */
+        display: flex; /* block inline none */
+        flex-direction: column; /* default: row */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        background: rgb(242, 239, 222);
+        /* ivory white */
+        font-size: 1rem; /* 1rem = 16px */
+        /* font size of the root element*/
+        font-family: Lucida Grande;
+        color: rgb(230, 230, 250);
+        /* lavender */
+        text-align: center;
+      }
+      .api-border {
+        width: 30rem; /* 50% */
+        height: 50rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%; /* 10px 50% */
+        border: 5px dotted rgb(230, 230, 250);
+        /*  solid outset dashed */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="api-border">
+      <div class="name">
+        ---
+      </div>
+      <div class="icon">
+
+      </div>
+      <div class="description">
+
+      </div>
+      <div class="feels_like">
+        -°F
+      </div>
+      <div class="pressure">
+
+      </div>
+      <div class="humidity">
+        ---
+      </div>
+      <div class="temp">
+        -°F
+      </div>
+      <div class="temp_max">
+        -°K
+      </div>
+      <div class="temp_min">
+        -°K
+      </div>
+      <div class="gust">
+
+      </div>
+      <div class="speed">
+
+      </div>
+    </div>
+    <script>
+      alert( 'Coming up...' );
+    </script>
+    <script src='weather.js'>
+    </script>
+  </body>
+</html>
